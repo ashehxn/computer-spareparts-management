@@ -88,10 +88,8 @@
             <div class="cardBox twoCardBox">
                 <div class="card">
                 	<a href="ShopUserViewServlet" style="text-decoration: none">
-                		<div>
-	                        <div class="numbers">Show Shop Managers</div>
-	                        <div class="cardName">Show all shop managers</div>
-	                    </div>
+		                <div class="numbers">Show Shop Managers</div>
+		                <div class="cardName">Show all shop managers</div>
                 	</a>
                 </div>
 

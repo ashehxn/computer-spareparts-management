@@ -30,7 +30,10 @@ public class AdminDBUtil {
 				String name = rs.getString("username");
 				String userN = rs.getString("password");
 				
-				Admin ad = new Admin(id, name, userN);
+				Admin ad = new Admin();
+				ad.setAdminId(id);
+				ad.setName(name);
+				ad.setUsername(username);
 				
 				admin.add(ad);
 			}
