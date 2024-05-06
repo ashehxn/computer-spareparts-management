@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Dashboard</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./css/admindash.css">
 <link
 	rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/fpnt-awesome/6.4.0/css/all.min.css"
@@ -143,7 +143,7 @@
     </div>
 
    
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

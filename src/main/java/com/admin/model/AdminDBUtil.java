@@ -13,6 +13,18 @@ public class AdminDBUtil {
 	
 	private static Connection con = null;
 	private static Statement stmt = null;
+	private static AdminDBUtil AdminInstance;
+	
+	private AdminDBUtil() {
+		
+	}
+	
+    public static AdminDBUtil getInstance() {
+        if (AdminInstance == null) {
+        	AdminInstance = new AdminDBUtil();
+        }
+        return AdminInstance;
+    }
 	
 	public static List<Admin> validate(String username, String password) {
 		

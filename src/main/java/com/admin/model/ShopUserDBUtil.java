@@ -15,6 +15,7 @@ public class ShopUserDBUtil {
 	private static Connection con = null;
 	private static Statement stmt = null;
 	
+	//	Insert function
 	public static boolean insertSUser(String name, String username, String password, int adminId) {
 		
 		boolean isSuccess = false;
@@ -41,6 +42,7 @@ public class ShopUserDBUtil {
 		
 	}
 	
+	//	Select All users function
 	public static List<ShopUser> selectShopUsers() {
 		
 		List<ShopUser> shopUsers = new ArrayList<>();
