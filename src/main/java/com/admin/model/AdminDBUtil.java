@@ -13,6 +13,18 @@ public class AdminDBUtil {
 	
 	private static Connection con = null;
 	private static Statement stmt = null;
+	private static AdminDBUtil AdminInstance;
+	
+	private AdminDBUtil() {
+		
+	}
+	
+    public static AdminDBUtil getInstance() {
+        if (AdminInstance == null) {
+        	AdminInstance = new AdminDBUtil();
+        }
+        return AdminInstance;
+    }
 	
 	public static List<Admin> validate(String username, String password) {
 		
@@ -30,7 +42,10 @@ public class AdminDBUtil {
 				String name = rs.getString("username");
 				String userN = rs.getString("password");
 				
-				Admin ad = new Admin(id, name, userN);
+				Admin ad = new Admin();
+				ad.setAdminId(id);
+				ad.setName(name);
+				ad.setUsername(username);
 				
 				admin.add(ad);
 			}
